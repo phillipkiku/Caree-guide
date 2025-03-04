@@ -1,0 +1,30 @@
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+img {
+    width: 30px;
+}
+
+.mobile-menu-button{
+    display: none;
+}
+.main-nav{
+    display: flex;
+    gap: 10px;
+}
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.user-menu{
+    display: flex;
+    flex-direction: column;
+}
+.user-dropdown{
+    display: flex;
+    flex-direction: column;
+}
