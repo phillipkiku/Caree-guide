@@ -27,8 +27,6 @@ function App() {
   return (
     <>
       <MantineProvider>
-        <h1 className="text-wxl font-bold underline">Menn</h1>
-        <button class="btn btn-secondary">Secondary</button>
         <UserProvider>
           <Routes>
             <Route path={"/login"} element={<Login />} />
@@ -37,23 +35,26 @@ function App() {
             <Route path={"/careercoach"} element={<CareerCoach />} />
             <Route path={"/aboutus"} element={<AboutUs />} />
             <Route path={"/contactus"} element={<ContactUs />} />
-            <Route element={<ProtectedRoute />}>
-              <Route path={"/profile"} element={<Profile />} />
-              <Route path={"/health"} element={<Health />} />
-              <Route path={"/business"} element={<Business />} />
-              <Route path={"/computer"} element={<Computer />} />
-              <Route path={"/sports"} element={<Sports />} />
-              <Route path={"/entertainment"} element={<Entertainment />} />
-              <Route path={"/publicservice"} element={<PublicService />} />
-              <Route path={"/businesscoach"} element={<BusinessCoach />} />
-              <Route path={"/computercoach"} element={<ComputerCoach />} />
-              <Route
-                path={"/entertainmentcoach"}
-                element={<EntertainmentCoach />}
-              />
-              <Route path={"/healthcoach"} element={<HealthCoach />} />
-              <Route path={"/sportscoach"} element={<SportsCoach />} />
-            </Route>
+
+            {/* protected files  */}
+            <Route path={"/profile"} element={<Profile />} />
+            <Route path={"/health"} element={<Health />} />
+            <Route path={"/business"} element={<Business />} />
+            <Route path={"/computer"} element={<Computer />} />
+            <Route path={"/sports"} element={<Sports />} />
+            <Route path={"/entertainment"} element={<Entertainment />} />
+            <Route path={"/publicservice"} element={<PublicService />} />
+            <Route path={"/businesscoach"} element={<BusinessCoach />} />
+            <Route path={"/computercoach"} element={<ComputerCoach />} />
+            <Route
+              path={"/entertainmentcoach"}
+              element={<EntertainmentCoach />}
+            />
+            <Route path={"/healthcoach"} element={<HealthCoach />} />
+            <Route path={"/sportscoach"} element={<SportsCoach />} />
+            {/* protected files */}
+
+            <Route element={<ProtectedRoute />}></Route>
           </Routes>
         </UserProvider>
       </MantineProvider>

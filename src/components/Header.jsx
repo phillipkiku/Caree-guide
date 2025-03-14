@@ -30,12 +30,14 @@ function Header() {
 
   return (
     <>
-      <div className="nav-wrapper">
+      <div className="nav-wrapper" class="bg-[pink] flex gap-[1rem] py-[1rem] justify-around font-bold">
         {/* Logo */}
-        <Link to="/" className="logo-link">
-          <img src={Logo} alt="logo" />
-          <span className="logo-text">Career Guide</span>
-        </Link>
+        <div className="logoname">
+          <Link to="/" className="logo-link">
+            <img src={Logo} alt="logo" />
+          </Link>
+          <Link>Career Guide</Link>
+        </div>
 
         {/* Mobile Menu Button */}
         <button className="mobile-menu-button" onClick={toggleMenu}>
@@ -43,12 +45,217 @@ function Header() {
         </button>
 
         {/* Main Navigation - Desktop */}
-        <nav className={`main-nav ${isMobileMenuOpen ? "mobile-open" : ""}`}>
-          <Link to="/" className="nav-link" onClick={closeMobileMenu}>
+        {/* <div className="main-nav" > */}
+        <nav className="main-nav" class="flex border items-center gap-[1rem] ">
+          <Link
+            to="/profile"
+            className="navlink"
+            class="link link-info text-black no-underline"
+          >
+            profile
+          </Link>
+          <Link
+            to="/"
+            className="navlink"
+            class="link link-info text-black no-underline"
+          >
             Home
           </Link>
 
-          <div className="nav-item">
+          <Link
+            to="/career"
+            className="navlink"
+            class="link link-info text-black no-underline"
+          >
+            Career
+          </Link>
+
+          <Link
+            to="/careercoach"
+            className="navlink"
+            class="link link-info text-black no-underline"
+          >
+            Coach
+          </Link>
+
+          <Link
+            to="/aboutus"
+            className="navlink"
+            class="link link-info text-black no-underline"
+          >
+            AboutUs
+          </Link>
+          <Link
+            to="/contactus"
+            className="navlink"
+            class="link link-info text-black no-underline"
+          >
+            Contact
+          </Link>
+
+          {/* Resources drawer button */}
+          <div class="drawer w-[30%]" className="drawer" >
+            <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+
+            <div class="drawer-content">
+              {/* <!-- Page content here --> */}
+              <label
+                for="my-drawer-4"
+                class="drawer-button btn btn-soft rounded-lg bg-sky-300/100 hover:bg-sky-700/100 hover:text-white "
+              >
+                Resources
+              </label>
+            </div>
+            <div class="drawer-side">
+              <label
+                for="my-drawer-4"
+                aria-label="close sidebar"
+                class="drawer-overlay"
+              ></label>
+              <ul class="menu bg-base-200  bg-cyan-50  text-base-content min-h-full w-80 p-4">
+                {/* <!-- Sidebar content here --> */}
+
+                <li>
+                  {/* career choice drawer menu */}
+                  <div className="career">
+                    <ul className="menu menu-horizontal px-1">
+                      <li>
+                        <details>
+                          <summary class="text-xl">Career Choice</summary>
+                          <ul className="bg-base-100 rounded-t-none p-2 text-[1rem]">
+                            <li>
+                              <Link
+                                to="/computer"
+                                // className="dropdown-item"
+                                // onClick={closeMobileMenu}
+                              >
+                                Computer
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                to="/health"
+                                // className="dropdown-item"
+                                // onClick={closeMobileMenu}
+                              >
+                                Health
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                to="/publicservice"
+                                // className="dropdown-item"
+                                // onClick={closeMobileMenu}
+                              >
+                                Public Service
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                to="/business"
+                                // className="dropdown-item"
+                                // onClick={closeMobileMenu}
+                              >
+                                Business
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                to="/entertainment"
+                                // className="dropdown-item"
+                                // onClick={closeMobileMenu}
+                              >
+                                Entertainment
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                to="/sports"
+                                // className="dropdown-item"
+                                // onClick={closeMobileMenu}
+                              >
+                                Sports
+                              </Link>
+                            </li>
+                          </ul>
+                        </details>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  {/* career coach menu */}
+                  <div className="flex-none">
+                    <ul className="menu menu-horizontal px-1">
+                      <li>
+                        <details>
+                          <summary class="text-xl">Career Coach</summary>
+                          <ul className="bg-base-100 text-[1rem] rounded-t-none p-2">
+                            <li>
+                              <Link
+                                to="/healthcoach"
+                                // className="dropdown-item"
+                                // onClick={closeMobileMenu}
+                              >
+                                Health Coaches
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                to="/computercoach"
+                                // className="dropdown-item"
+                                // onClick={closeMobileMenu}
+                              >
+                                Computer Coaches
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                to="/entertainmentcoach"
+                                // className="dropdown-item"
+                                // onClick={closeMobileMenu}
+                              >
+                                Entertainment Coaches
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                to="/"
+                                // className="dropdown-item"
+                                // onClick={closeMobileMenu}
+                              >
+                                Public Service Coaches
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                to="/businesscoach"
+                                // className="dropdown-item"
+                                // onClick={closeMobileMenu}
+                              >
+                                Business Coaches
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                to="/sportscoach"
+                                // className="dropdown-item"
+                                // onClick={closeMobileMenu}
+                              >
+                                Sports Coaches
+                              </Link>
+                            </li>
+                          </ul>
+                        </details>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* <div className="nav-item">
             <button
               className="nav-button"
               onClick={() => toggleDropdown("Career Choice")}
@@ -56,6 +263,7 @@ function Header() {
               Career Choice
               <span className="icon">↓</span>
             </button>
+
             {openMenu === "Career Choice" && (
               <div className="dropdown">
                 <Link
@@ -100,11 +308,11 @@ function Header() {
                 >
                   Sports
                 </Link>
-              </div>
+              </div>`
             )}
-          </div>
+          </div> */}
 
-          <div className="nav-item">
+          {/* <div className="nav-item">
             <button
               className="nav-button"
               onClick={() => toggleDropdown("Career Coach")}
@@ -159,122 +367,56 @@ function Header() {
                 </Link>
               </div>
             )}
-          </div>
+          </div> */}
         </nav>
+        {/* </div> */}
 
-        {/* User Menu */}
-        <div
+        {/* <div
           className={`user-section ${isMobileMenuOpen ? "mobile-open" : ""}`}
-        >
-          {user ? (
-            <div className="user-menu">
-              <button className="user-button">
-                {user.avatarUrl && (
-                  <img
-                    src={`${config.apiBackend}${user.avatarUrl}`}
-                    alt="Avatar"
-                    className="user-avatar"
-                  />
-                )}
-                <span className="icon">↓</span>
-              </button>
-              <div className="user-dropdown">
-                <Link
-                  to="/profile"
-                  className="dropdown-item"
-                  onClick={closeMobileMenu}
-                >
-                  Profile
-                </Link>
-                <button onClick={handleLogout} className="logout-button">
-                  Logout
+        > */}
+        <div className="navend">
+          <div className="loginbutton">
+            {user ? (
+              <div className="user-menu">
+                <button className="user-button">
+                  {user.avatarUrl && (
+                    <img
+                      src={`${config.apiBackend}${user.avatarUrl}`}
+                      alt="Avatar"
+                      className="user-avatar"
+                    />
+                  )}
+                  <span className="icon">↓</span>
                 </button>
+                <div className="user-dropdown">
+                  <Link
+                    to="/profile"
+                    className="dropdown-item"
+                    onClick={closeMobileMenu}
+                  >
+                    Profile
+                  </Link>
+                  <button onClick={handleLogout} className="logout-button">
+                    Logout
+                  </button>
+                </div>
               </div>
-            </div>
-          ) : (
-            <Link
-              to="/loginRegister"
-              className="auth-button"
-              onClick={closeMobileMenu}
-            >
-              Login / Register
-            </Link>
-          )}
-        </div>
-      </div>
-
-      <div>
-        <div class="navbar bg-base-100 shadow-sm">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  {" "}
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />{" "}
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            ) : (
+              <Link
+                to="/loginRegister"
+                className="auth-button"
+                onClick={closeMobileMenu}
+                class="bg-[#B22222] hover:bg-sky-300/100 px-[0.4rem] py-[0.5rem] rounded-[2rem] text-white hover:text-black "
               >
-                <li>
-                  <a>Item 1</a>
-                </li>
-                <li>
-                  <a>Parent</a>
-                  <ul class="p-2">
-                    <li>
-                      <a>Submenu 1</a>
-                    </li>
-                    <li>
-                      <a>Submenu 2</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a>Item 3</a>
-                </li>
-              </ul>
-            </div>
-            <a class="btn btn-ghost text-xl">daisyUI</a>
+                Login / Register
+              </Link>
+            )}
           </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <details>
-                  <summary>Parent</summary>
-                  <ul class="p-2">
-                    <li>
-                      <a>Submenu 1</a>
-                    </li>
-                    <li>
-                      <a>Submenu 2</a>
-                    </li>
-                  </ul>
-                </details>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
-            </ul>
-          </div>
-          <div class="navbar-end">
-            <a class="btn">Button</a>
-          </div>
+          <input
+            type="checkbox"
+            value="synthwave"
+            class="toggle theme-controller "
+          />
         </div>
       </div>
     </>
