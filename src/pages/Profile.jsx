@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/footer";
+// import TodoList from "../components/TodoList";
+// import TodoList from "../components/TodoList";
 // import "../"
 
 function Profile() {
@@ -9,7 +11,7 @@ function Profile() {
       <Header />
       {/* divider */}
       {/* Client profile  */}
-      <div className="flex w-[95%] flex-col lg:flex-row mt-[10rem] mb-[3rem] ml-[2.5%]">
+      <div className="flex w-[95%] flex-col lg:flex-row mt-[1rem] mb-[3rem] ml-[2.5%]">
         <div className="card bg-base-300 rounded-box grid grow place-items-center w-[50%] content-start gap-[1rem]">
           Profile box
           {/* profile detials remove other stats */}
@@ -412,9 +414,8 @@ function Profile() {
               <div className="card card-dash bg-base-100 w-96 mb-[5%]">
                 <div className="card-body">
                   <h2 className="card-title font-bold">TASKS</h2>
-
+                  <TodoList />
                   <p>Tasks</p>
-                  
                 </div>
               </div>
             </div>

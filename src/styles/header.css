@@ -1,9 +1,4 @@
 .nav-wrapper {
-  /* display: flex;
-  justify-content: space-between;
-  /* align-items: center; */
-  /* position: fixed;  */
-
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -17,50 +12,34 @@
   font-size: medium;
   z-index: 2;
   width: 100%;
-  /* margin-bottom: 2rem;
-  padding-bottom: 3rem; */
   color: black;
   text-decoration: none;
   padding: 1.5rem;
   border: 2px solid green;
-
 }
-.main-nav{
-    border: 2px solid green;
-    display: flex;
-    align-items: center;
-    /* font-size: 1rem; */
-    /* font-weight: 600; */
-    /* gap: 2rem; */
-    /* width: 50%; */
-    /* justify-content: space-between; */
-    border: 2px solid green
+.main-nav {
+  border: 2px solid green;
+  display: flex;
+  align-items: center;
+  border: 2px solid green;
 }
-.navlink{
-    border: 2px solid blue;
-    padding: 0.5rem;
+.navlink {
+  border: 2px solid blue;
+  padding: 0.5rem;
 }
 
-
-
-.career{
-    z-index: 2;
+.career {
+  z-index: 2;
 }
 
-.logoname{
-  /* border: 2px solid black; */
-    display: flex;
-    justify-content: space-around;
-    /* justify-content: flex-start; */
-    border: 2px solid red;
-    width: 25%;
-    /* padding: rem; */
-    /* margin-left: 2rem; */
-    /* margin-right: 2rem; */
-    font-size: 2rem;
-    font-weight: 700;
-    color: #dc143c;
-    align-items: center;
+.logoname {
+  display: flex;
+  justify-content: space-around;
+  width: 25%;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #dc143c;
+  align-items: center;
 }
 img {
   width: 30px;
@@ -86,21 +65,18 @@ img {
   display: flex;
   flex-direction: column;
 }
-.nav-items{
-    display: flex;
-    flex-direction: column;
+.nav-items {
+  display: flex;
+  flex-direction: column;
 }
-.loginbutton{
-    font-size: small;
-    font-weight: 600;
-    padding: 0.5rem;
-    border-radius: 3rem;
+.loginbutton {
+  font-size: small;
+  font-weight: 600;
+  padding: 0.5rem;
+  border-radius: 3rem;
 }
-.navend{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-
+.navend {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
-
-

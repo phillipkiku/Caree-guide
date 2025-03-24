@@ -10,7 +10,7 @@ function AboutUs() {
       <Header />
       <MantineProvider>
         <div
-          className="hero mt-[5%] h-[80vh]"
+          className="hero h-[80vh]"
           style={{
             backgroundImage:
               "url(https://cdni.iconscout.com/illustration/premium/thumb/career-guidance-illustration-download-in-svg-png-gif-file-formats--vocational-training-professional-development-educational-pathways-education-pack-school-illustrations-9506611.png?f=webp)",
@@ -38,7 +38,7 @@ function AboutUs() {
         <div class="mt-[1rem] justify-items-center ">
           <div class="card mt-[1rem] bg-primary text-primary-content justify-self-center text-center justify-items-center justify-items-center  w-[80%]">
             <div class="card-body">
-              <h2 class="card-title border text-black justify-center text-center text-3xl ">
+              <h2 class="card-title text-black justify-center text-center text-3xl ">
                 CORE VALUES
               </h2>
               <div class="text-xl text-black">
@@ -86,7 +86,7 @@ function AboutUs() {
         </div>
 
         {/* testimonials card - strapi*/}
-        <div class="justify-center border p-[2rem] justify-items-center mt-[3rem] text-2xl">
+        <div class="justify-center  p-[2rem] justify-items-center mt-[3rem] text-2xl">
           <h1 class="text-black">TESTIMONIALS</h1>
           <div class="flex gap[2rem] flex-wrap">
             <div class="card bg-base-100 w-96 shadow-sm">
@@ -108,7 +108,7 @@ function AboutUs() {
 
         {/* team - Strapi*/}
 
-        <div class="justify-center border p-[2rem] justify-items-center mt-[3rem] text-2xl">
+        <div class="justify-center  p-[2rem] justify-items-center mt-[3rem] text-2xl">
           <h1>MEET OUR TEAM</h1>
           <div class="flex gap[2rem] flex-wrap">
             <div class="card w-96 bg-base-100 card-lg shadow-sm m-[2rem]">
@@ -131,8 +131,8 @@ function AboutUs() {
 
         {/* FAQs - Strapi */}
 
-        <div class="border   p-[2rem]  mt-[3rem] ">
-          <h1 class="text-2xl border text-center p-[1rem] font-bold">FAQS</h1>
+        <div class="   p-[2rem]  mt-[3rem] ">
+          <h1 class="text-2xl  text-center p-[1rem] font-bold">FAQS</h1>
           <div class="flex gap[2rem] flex-wrap">
             <div class="bg-base-100 border-base-300 collapse border">
               <input type="checkbox" class="peer" />

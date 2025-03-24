@@ -7,7 +7,7 @@ function ContactUs() {
     <>
       <Header />
 
-      <div className="hero bg-base-200 h-[30vh] mt-[16%]">
+      <div className="hero bg-base-200 h-[40vh]">
         <div className="hero-content text-center">
           <div className="max-w-md">
             <h1 className="text-5xl font-bold">CONTACT US</h1>
@@ -16,7 +16,7 @@ function ContactUs() {
         </div>
       </div>
 
-      <div class="flex gap-[2rem] my-[2rem] border justify-self-center ">
+      <div class="flex gap-[2rem] my-[2rem] justify-self-center ">
         {/* details capturing card */}
         <div className="card w-96 bg-base-100 card-xl shadow-sm bg-cyan-200 items-center self-center">
           <div className="card-body">

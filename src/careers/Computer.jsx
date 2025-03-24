@@ -7,8 +7,8 @@ function Computer() {
   return (
     <>
       <Header />
-      <h1>Computer</h1>
-      <CareerList category="Computer" />
+      {/* <h1>Computer</h1> */}
+      {/* <CareerList category="Computer" /> */}
       {/* Description section from strapi*/}
       <div class="justify-center bg-black p-[2rem]">
         <div class="mt-[4rem] bg-black">

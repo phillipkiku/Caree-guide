@@ -7,14 +7,14 @@ function CareerCoach() {
     <>
       <Header />
       {/*  Reasons to be a coach */}
-      <div class="mt-[7rem] h-[75vh] md:h-[65vh] bg-linear-to-r from-blue-400 to-cyan-200 text-center content-center justify-items-center">
+      <div class="h-[75vh] md:h-[65vh] bg-linear-to-r from-blue-400 to-cyan-200 text-center content-center justify-items-center">
         <div>
           <h1 class="md:text-[2.5rem] mt-[3rem] font-bold md:p-[2rem]">Why be a Coach?</h1>
         </div>
         <div>
-          <ul className="timeline  sd:timeline-vertical p-[2rem] justify-center w-[40%] ml-[30%]">
+          <ul className="timeline md:timeline-vertical p-[2rem] justify-center w-[40%] ml-[30%]">
             <li>
-              <div class="timeline-start timeline-box font-bold">
+              <div class="timeline-start timeline-box font-bold md:text-[1rem]">
                 Empower Your Friends & Family By Sharing Free Quality Education
               </div>
               <div className="timeline-middle">
@@ -50,7 +50,7 @@ function CareerCoach() {
                   />
                 </svg>
               </div>
-              <div className="timeline-end timeline-box  font-bold">
+              <div className="timeline-end timeline-box  font-bold md:text-[1rem]">
                 Teach On Alison, Earn Money & Inspire Millions
               </div>
               <hr className="bg-primary" />
@@ -58,7 +58,7 @@ function CareerCoach() {
 
             <li>
               <hr className="bg-primary" />
-              <div className="timeline-start timeline-box font-bold">
+              <div className="timeline-start timeline-box font-bold md:text-[1rem]">
                 Become A Member Of The Alison Affiliate Programme
               </div>
               <div className="timeline-middle">
@@ -87,7 +87,7 @@ function CareerCoach() {
       <div class="w-[90%] ml-[5%] justify-center justify-items-center p-[2rem] ">
         <h1 class="font-bold text-[2rem] p-[1rem]">Becoming A Coach.</h1>
         {/* steps */}
-        <div class="flex gap-[1rem] flex-wrap border justify-center">
+        <div class="flex gap-[1rem] flex-wrap justify-center">
           {/* step 1 */}
           <div >
             <div className="card bg-base-100 w-96 shadow-sm h-70 p-[2rem] ">

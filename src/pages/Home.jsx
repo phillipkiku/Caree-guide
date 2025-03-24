@@ -10,12 +10,11 @@ function Home() {
     <>
       <Header />
       <MantineProvider>
-        <div class="hero h-[35rem] bg-linear-to-r from-cyan-200 to-blue-400  mt-[5%]">
+        <div class="hero h-[35rem] bg-linear-to-r from-cyan-200 to-blue-400  mt-[%]">
           <div class="hero-content text-center flex gap-[3rem]">
             <iframe
               src="https://www.youtube.com/embed/Tnt0XBth5Jw"
               title="YouTube video player"
-              // style={{ border: 0 }}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               class="rounded-xl w-[25rem] h-[40vh]"
@@ -37,8 +36,6 @@ function Home() {
             </div>
           </div>
         </div>
-
-        
 
         <div class="flex w-[90%] ml-[5%] gap-[1.5rem] my-[5rem] justify-center">
           {/* CARD ONE */}
@@ -133,7 +130,7 @@ function Home() {
           </div>
         </div>
 
-        <div class="flex gap-[2rem] justify-center bg-[#dc143d]/10 p-[1.5rem] rounded-[1rem] w-[55%] ml-[22.5%]">
+        <div class="flex gap-[2rem] justify-center bg-[#dc143d]/10 p-[1.5rem] rounded-[1rem] w-[80%] ml-[10%]">
           <button class="btn btn-neutral text-[1rem] font-bold hover:btn-primary ">
             <Link to="/computer">Computer</Link>
           </button>
@@ -154,7 +151,8 @@ function Home() {
         <div class="flex w-[90%] gap-[3rem] ml-[5%] my-[5%]">
           <div class="card card-side bg-base-100 shadow-sm w-[50%] ">
             <figure>
-              <img class="w-[40%]"
+              <img
+                class="w-[40%]"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmXwODRFXiEUDHeSZVt7QbddydDJTMYf1X2g&s"
                 alt="Movie"
               />

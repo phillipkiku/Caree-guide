@@ -3,14 +3,30 @@ import Header from "../components/Header";
 import Footer from "../components/footer";
 import { Link } from "react-router-dom";
 import { MantineProvider } from "@mantine/core";
-
+import useFetchProperties from "../hook/fetchCareerData";
+import config from "../.config";
 function Career() {
+  const URL = `${config.apiBackend}/api/newsfeeds`;
+  const { newsFeed, loading, error } = useFetchProperties(URL);
+  const news = newsFeed?.data || [];
+  console.log(newsFeed);
+
+  if (!Array.isArray(news)) {
+    return <p>Unexpected Data Format!</p>;
+  }
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+  if (error) {
+    return error;
+  }
+
   return (
     <>
       <Header />
       <MantineProvider>
         {/* Step of career discovery */}
-        <div class="mt-[7rem] bg-linear-to-r from-blue-400 to-cyan-200 text-center">
+        <div class="bg-linear-to-r from-blue-400 to-cyan-200 text-center">
           <div class="p-[2rem]">
             <h1 class="text-[2.5rem]  font-bold p-[2rem]">
               Building your Career.
@@ -133,9 +149,15 @@ function Career() {
                 alt="Shoes"
               />
             </figure>
+            
             <div class="card-body">
-              <h2 class="card-title text-xl">Newsfeed title</h2>
+              <h2 class="card-title text-xl">{newsFeed.newsfeed_title}</h2>
               <p>News feed description.</p>
+              {newsFeed.map((news) => (
+              <li  key={newsFeed.id} class="text-white">
+                {newsFeed.newsfeed_title}
+              </li>
+            ))}
             </div>
             {/* set career cat=rtegory to link to for each newspost */}
             <Link to="/">

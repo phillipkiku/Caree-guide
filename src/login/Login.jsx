@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Button, TextInput } from "@mantine/core";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import config from "../.config";
 import { UserContext } from "../context.jsx/UserContext";
 import axios from "axios";
@@ -84,22 +84,27 @@ function Login() {
     <>
       <div class="text-xl text-white bg-linear-to-b from-blue-400 to-cyan-200 h-240 items-center justify-around flex border">
         <div class=" p-[3rem] w-[30%] justify-items-center text-center ">
-          <h1 class="text-[3rem] font-bold text-[#B22222]">
-            Welcome <br />
-            to <br />
-            CareeGuide
-          </h1>
+          <Link to="/">
+            <h1 class="text-[3rem] font-bold text-[#B22222]">
+              Welcome <br />
+              to <br />
+              CareeGuide
+            </h1>
+          </Link>
+
           <p class="text-black p-[2rem]">
             We are glad to have you join us make transformational change.
           </p>
         </div>
         <div
           className="form"
-          class=" justify-items-center bg-black/80 w-[60%] text-center rounded-[3rem] p-[4rem]"
+          class=" justify-items-center bg-black/40 w-[60%] text-center rounded-[3rem] p-[4rem]"
         >
           {message && <p className="errorMessage">{message}</p>}
           <form onSubmit={formType === "login" ? login : register}>
-            <h1>{formType === "login" ? "Login" : "Register"}</h1>
+            <h1 class="text-3xl p-[1rem]  font-bold">
+              {formType === "login" ? "Login" : "Register"}
+            </h1>
             {formType === "register" && (
               <>
                 <TextInput
@@ -127,11 +132,18 @@ function Login() {
               className="textInput"
             />
             <br />
-            <div className="group1">
-              <Button type="submit">
+            <div className="group1" class=" flex flex-col gap-[1rem]">
+              <Button
+                type="submit"
+                class="bg-[#B22222] px-[0.5rem] mx-[4rem] font-semibold rounded-[1rem]"
+              >
                 {formType === "login" ? "Login" : "Register"}
               </Button>
-              <Button variant="light" onClick={toggleFormType}>
+              <Button
+                variant="light"
+                onClick={toggleFormType}
+                class="bg-[#B22222] px-[0.5rem] mx-[1rem] font-semibold rounded-[1rem]"
+              >
                 {formType === "login"
                   ? "Switch to Register"
                   : "Switch to Login"}

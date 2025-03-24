@@ -15,7 +15,7 @@
     "@mantine/form": "^7.17.1",
     "@mantine/hooks": "^7.17.1",
     "@tailwindcss/vite": "^4.0.9",
-    "axios": "^1.8.1",
+    "axios": "^1.8.3",
     "dayjs": "^1.11.13",
     "lucide": "^0.477.0",
     "react": "^19.0.0",

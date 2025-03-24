@@ -30,7 +30,10 @@ function Header() {
 
   return (
     <>
-      <div className="nav-wrapper" class="bg-[pink] flex gap-[1rem] py-[1rem] justify-around font-bold">
+      <div
+        className="nav-wrapper"
+        class="flex gap-[1rem] py-[1rem] justify-around font-bold"
+      >
         {/* Logo */}
         <div className="logoname">
           <Link to="/" className="logo-link">
@@ -45,19 +48,18 @@ function Header() {
         </button>
 
         {/* Main Navigation - Desktop */}
-        {/* <div className="main-nav" > */}
-        <nav className="main-nav" class="flex border items-center gap-[1rem] ">
+        <nav className="main-nav" class="flex items-center gap-[1rem] ">
           <Link
             to="/profile"
             className="navlink"
-            class="link link-info text-black no-underline"
+            class="link link-info text-black no-underline text-[1.3rem]"
           >
             profile
           </Link>
           <Link
             to="/"
             className="navlink"
-            class="link link-info text-black no-underline"
+            class="link link-info text-black no-underline text-[1.3rem]"
           >
             Home
           </Link>
@@ -65,7 +67,7 @@ function Header() {
           <Link
             to="/career"
             className="navlink"
-            class="link link-info text-black no-underline"
+            class="link link-info text-black no-underline text-[1.3rem]"
           >
             Career
           </Link>
@@ -73,7 +75,7 @@ function Header() {
           <Link
             to="/careercoach"
             className="navlink"
-            class="link link-info text-black no-underline"
+            class="link link-info text-black no-underline text-[1.3rem]"
           >
             Coach
           </Link>
@@ -81,20 +83,20 @@ function Header() {
           <Link
             to="/aboutus"
             className="navlink"
-            class="link link-info text-black no-underline"
+            class="link link-info text-black no-underline text-[1.3rem]"
           >
             AboutUs
           </Link>
           <Link
             to="/contactus"
             className="navlink"
-            class="link link-info text-black no-underline"
+            class="link link-info text-black no-underline text-[1.3rem]"
           >
             Contact
           </Link>
 
           {/* Resources drawer button */}
-          <div class="drawer w-[30%]" className="drawer" >
+          <div class="drawer w-[30%]" className="drawer">
             <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
 
             <div class="drawer-content">
@@ -124,58 +126,22 @@ function Header() {
                           <summary class="text-xl">Career Choice</summary>
                           <ul className="bg-base-100 rounded-t-none p-2 text-[1rem]">
                             <li>
-                              <Link
-                                to="/computer"
-                                // className="dropdown-item"
-                                // onClick={closeMobileMenu}
-                              >
-                                Computer
-                              </Link>
+                              <Link to="/computer">Computer</Link>
                             </li>
                             <li>
-                              <Link
-                                to="/health"
-                                // className="dropdown-item"
-                                // onClick={closeMobileMenu}
-                              >
-                                Health
-                              </Link>
+                              <Link to="/health">Health</Link>
                             </li>
                             <li>
-                              <Link
-                                to="/publicservice"
-                                // className="dropdown-item"
-                                // onClick={closeMobileMenu}
-                              >
-                                Public Service
-                              </Link>
+                              <Link to="/publicservice">Public Service</Link>
                             </li>
                             <li>
-                              <Link
-                                to="/business"
-                                // className="dropdown-item"
-                                // onClick={closeMobileMenu}
-                              >
-                                Business
-                              </Link>
+                              <Link to="/business">Business</Link>
                             </li>
                             <li>
-                              <Link
-                                to="/entertainment"
-                                // className="dropdown-item"
-                                // onClick={closeMobileMenu}
-                              >
-                                Entertainment
-                              </Link>
+                              <Link to="/entertainment">Entertainment</Link>
                             </li>
                             <li>
-                              <Link
-                                to="/sports"
-                                // className="dropdown-item"
-                                // onClick={closeMobileMenu}
-                              >
-                                Sports
-                              </Link>
+                              <Link to="/sports">Sports</Link>
                             </li>
                           </ul>
                         </details>
@@ -192,58 +158,24 @@ function Header() {
                           <summary class="text-xl">Career Coach</summary>
                           <ul className="bg-base-100 text-[1rem] rounded-t-none p-2">
                             <li>
-                              <Link
-                                to="/healthcoach"
-                                // className="dropdown-item"
-                                // onClick={closeMobileMenu}
-                              >
-                                Health Coaches
-                              </Link>
+                              <Link to="/healthcoach">Health Coaches</Link>
                             </li>
                             <li>
-                              <Link
-                                to="/computercoach"
-                                // className="dropdown-item"
-                                // onClick={closeMobileMenu}
-                              >
-                                Computer Coaches
-                              </Link>
+                              <Link to="/computercoach">Computer Coaches</Link>
                             </li>
                             <li>
-                              <Link
-                                to="/entertainmentcoach"
-                                // className="dropdown-item"
-                                // onClick={closeMobileMenu}
-                              >
+                              <Link to="/entertainmentcoach">
                                 Entertainment Coaches
                               </Link>
                             </li>
                             <li>
-                              <Link
-                                to="/"
-                                // className="dropdown-item"
-                                // onClick={closeMobileMenu}
-                              >
-                                Public Service Coaches
-                              </Link>
+                              <Link to="/">Public Service Coaches</Link>
                             </li>
                             <li>
-                              <Link
-                                to="/businesscoach"
-                                // className="dropdown-item"
-                                // onClick={closeMobileMenu}
-                              >
-                                Business Coaches
-                              </Link>
+                              <Link to="/businesscoach">Business Coaches</Link>
                             </li>
                             <li>
-                              <Link
-                                to="/sportscoach"
-                                // className="dropdown-item"
-                                // onClick={closeMobileMenu}
-                              >
-                                Sports Coaches
-                              </Link>
+                              <Link to="/sportscoach">Sports Coaches</Link>
                             </li>
                           </ul>
                         </details>
@@ -254,141 +186,18 @@ function Header() {
               </ul>
             </div>
           </div>
-
-          {/* <div className="nav-item">
-            <button
-              className="nav-button"
-              onClick={() => toggleDropdown("Career Choice")}
-            >
-              Career Choice
-              <span className="icon">↓</span>
-            </button>
-
-            {openMenu === "Career Choice" && (
-              <div className="dropdown">
-                <Link
-                  to="/computer"
-                  className="dropdown-item"
-                  onClick={closeMobileMenu}
-                >
-                  Computer
-                </Link>
-                <Link
-                  to="/health"
-                  className="dropdown-item"
-                  onClick={closeMobileMenu}
-                >
-                  Health
-                </Link>
-                <Link
-                  to="/publicservice"
-                  className="dropdown-item"
-                  onClick={closeMobileMenu}
-                >
-                  Public Service
-                </Link>
-                <Link
-                  to="/business"
-                  className="dropdown-item"
-                  onClick={closeMobileMenu}
-                >
-                  Business
-                </Link>
-                <Link
-                  to="/entertainment"
-                  className="dropdown-item"
-                  onClick={closeMobileMenu}
-                >
-                  Entertainment
-                </Link>
-                <Link
-                  to="/sports"
-                  className="dropdown-item"
-                  onClick={closeMobileMenu}
-                >
-                  Sports
-                </Link>
-              </div>`
-            )}
-          </div> */}
-
-          {/* <div className="nav-item">
-            <button
-              className="nav-button"
-              onClick={() => toggleDropdown("Career Coach")}
-            >
-              Career Coach
-              <span className="icon">↓</span>
-            </button>
-            {openMenu === "Career Coach" && (
-              <div className="dropdown">
-                <Link
-                  to="/healthcoach"
-                  className="dropdown-item"
-                  onClick={closeMobileMenu}
-                >
-                  Health Coaches
-                </Link>
-                <Link
-                  to="/computercoach"
-                  className="dropdown-item"
-                  onClick={closeMobileMenu}
-                >
-                  Computer Coaches
-                </Link>
-                <Link
-                  to="/entertainmentcoach"
-                  className="dropdown-item"
-                  onClick={closeMobileMenu}
-                >
-                  Entertainment Coaches
-                </Link>
-
-                <Link
-                  to="/"
-                  className="dropdown-item"
-                  onClick={closeMobileMenu}
-                >
-                  Public Service Coaches
-                </Link>
-                <Link
-                  to="/businesscoach"
-                  className="dropdown-item"
-                  onClick={closeMobileMenu}
-                >
-                  Business Coaches
-                </Link>
-                <Link
-                  to="/sportscoach"
-                  className="dropdown-item"
-                  onClick={closeMobileMenu}
-                >
-                  Sports Coaches
-                </Link>
-              </div>
-            )}
-          </div> */}
         </nav>
-        {/* </div> */}
 
-        {/* <div
-          className={`user-section ${isMobileMenuOpen ? "mobile-open" : ""}`}
-        > */}
         <div className="navend">
           <div className="loginbutton">
             {user ? (
               <div className="user-menu">
-                <button className="user-button">
-                  {user.avatarUrl && (
-                    <img
-                      src={`${config.apiBackend}${user.avatarUrl}`}
-                      alt="Avatar"
-                      className="user-avatar"
-                    />
-                  )}
-                  <span className="icon">↓</span>
-                </button>
-                <div className="user-dropdown">
+                <button className="user-button"></button>
+                <div
+                  className="user-dropdown"
+                  class="flex gap-[0.5rem] justify-center justify-items-center justify-self-center  p-[0.5rem] items-center text-[1rem]"
+                >
+                  <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
                   <Link
                     to="/profile"
                     className="dropdown-item"
@@ -403,12 +212,12 @@ function Header() {
               </div>
             ) : (
               <Link
-                to="/loginRegister"
+                to="/login"
                 className="auth-button"
                 onClick={closeMobileMenu}
-                class="bg-[#B22222] hover:bg-sky-300/100 px-[0.4rem] py-[0.5rem] rounded-[2rem] text-white hover:text-black "
+                class="bg-[#B22222] hover:bg-sky-300/100 px-[1rem] py-[0.5rem] rounded-[2rem] text-white hover:text-black md:text-[1rem] sm:text-[0.4rem] ml-[1rem]"
               >
-                Login / Register
+                Login
               </Link>
             )}
           </div>
